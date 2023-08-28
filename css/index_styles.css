@@ -1,0 +1,17 @@
+/* styles.css */
+.card {
+    margin: 10px;
+  }
+  
+  #newSection.col-md-12 {
+    width: 100%;
+  }
+  
+  #recommendSection.col-md-12 {
+    width: 100%;
+  }
+  
+  .short-content {
+    display: none;
+  }
+  
