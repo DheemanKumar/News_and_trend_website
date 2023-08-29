@@ -1,37 +1,39 @@
 // script.js
 
 function adjustLayoutForNew() {
+    document.querySelectorAll(".card-body.new-card-body").forEach(function (body) {
+      body.style.display = "block";
+    });
+  
+    document.querySelectorAll(".card-body.recommend-card-body").forEach(function (body) {
+      body.style.display = "none";
+    });
+  
     document.getElementById("newSection").classList.remove("col-md-3");
     document.getElementById("newSection").classList.remove("col-md-6");
     document.getElementById("newSection").classList.add("col-md-9");
+  
     document.getElementById("recommendSection").classList.remove("col-md-9");
     document.getElementById("recommendSection").classList.remove("col-md-6");
     document.getElementById("recommendSection").classList.add("col-md-3");
-  
-    // Show full heading and content of the new section
-    document.getElementById("newCardBody").style.display = "block";
-    document.getElementById("newCardShort").style.display = "none";
-  
-    // Show only heading of the recommend section
-    document.getElementById("recommendCardBody").style.display = "none";
-    document.getElementById("recommendCardShort").style.display = "block";
   }
   
   function adjustLayoutForRecommend() {
+    document.querySelectorAll(".card-body.new-card-body").forEach(function (body) {
+      body.style.display = "none";
+    });
+  
+    document.querySelectorAll(".card-body.recommend-card-body").forEach(function (body) {
+      body.style.display = "block";
+    });
+  
     document.getElementById("newSection").classList.remove("col-md-9");
     document.getElementById("newSection").classList.remove("col-md-6");
     document.getElementById("newSection").classList.add("col-md-3");
+  
     document.getElementById("recommendSection").classList.remove("col-md-3");
     document.getElementById("recommendSection").classList.remove("col-md-6");
     document.getElementById("recommendSection").classList.add("col-md-9");
-  
-    // Show only heading of the new section
-    document.getElementById("newCardBody").style.display = "none";
-    document.getElementById("newCardShort").style.display = "block";
-  
-    // Show full heading and content of the recommend section
-    document.getElementById("recommendCardBody").style.display = "block";
-    document.getElementById("recommendCardShort").style.display = "none";
   }
   
   document.getElementById("newLink").addEventListener("click", function () {
