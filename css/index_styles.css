@@ -1,17 +1,37 @@
-/* styles.css */
+/* Apply custom styles to the navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the search bar */
+.form-inline input[type="search"] {
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Style the cards */
 .card {
-    margin: 10px;
-  }
-  
-  #newSection.col-md-12 {
-    width: 100%;
-  }
-  
-  #recommendSection.col-md-12 {
-    width: 100%;
-  }
-  
-  .short-content {
-    display: none;
-  }
-  
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #333;
+  color: #fff;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+/* Add more custom styles as needed */
